@@ -1,0 +1,123 @@
+@import "./mixin.scss";
+@import "../../../public/css/src/mixin.scss";
+.wptrove-number-container{
+    width: 100%;
+    overflow: auto;
+    padding: 10px 0;
+}
+.wptrove-number-label{
+    width: 60%;
+    float: left;
+}
+.wptrove-number-label p{
+    margin: 0.4em 0;
+}
+.wptrove-number-input{
+    width: 40%;
+    float: left;
+}
+
+.wptrove-color-container{
+    width: 100%;
+}
+.wptrove-color-label{
+    width: 100%;
+}
+.wptrove-color-label p{
+    margin: 0.4em 0;
+}
+.wptrove-color-input{
+    width: 100%;
+}
+
+.wptrove-button-group-option{
+
+}
+.wptrove-button-group-option-selected{
+    background: $colorOne;
+}
+
+.wptrove-image-radio-container{
+	width: 100%;
+	padding: 20px;
+	margin: 20px 0 0 0;
+	background: rgba(230,230,230,1.00);
+    box-sizing: border-box;
+}
+.wptrove-image-radio-container p{
+	margin: 0 0 12px 0;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+}
+.wptrove-image-radio-option{
+
+}
+.wptrove-image-radio-option-selected{
+	
+}
+.wptrove-image-radio-option-selected img{
+	border: 1px solid #DA4B4D;
+}
+
+.wptrove-text-select-option-container{
+	width: 100%;
+	margin: 20px 0;
+    padding: 10px 0;
+	background: rgba(230,230,230,1.00);
+    border-radius: 4px;
+}
+.wptrove-text-select-option{
+	margin: 0;
+	font-size: 14px;
+	font-weight: bold;
+    padding: 5px 10px 5px 40px;
+    position: relative;
+    &__icon{
+        position: absolute;
+        top: 9px;
+        left: 10px;
+        width: 18px;
+        height: 18px;
+        display:none;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' aria-hidden='true' role='img' width='18px' height='18px' preserveAspectRatio='xMidYMid meet' viewBox='0 0 1024 1024'%3E%3Cpath fill='currentColor' d='M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448s448-200.6 448-448S759.4 64 512 64zm193.5 301.7l-210.6 292a31.8 31.8 0 0 1-51.7 0L318.5 484.9c-3.8-5.3 0-12.7 6.5-12.7h46.9c10.2 0 19.9 4.9 25.9 13.3l71.2 98.8l157.2-218c6-8.3 15.6-13.3 25.9-13.3H699c6.5 0 10.3 7.4 6.5 12.7z'/%3E%3C/svg%3E");
+    }
+    &--selected{
+        background: rgb(221, 221, 221);
+    }
+}
+
+.wptrove-text-select-option--selected .wptrove-text-select-option__icon{
+    display: block;
+}
+
+.wptrove-simple-select-container{
+    width: 100%;
+    margin: 10px 0;
+    background: #f5f5f5;
+}
+.wptrove-simple-select-label{
+    padding: 10px 60px 13px 20px;
+    position: relative;
+    &__text{
+        margin: 0;
+    }
+    &__icon{
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        width: 20px;
+        height: 20px;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' aria-hidden='true' role='20px' width='1em' height='20px' preserveAspectRatio='xMidYMid meet' viewBox='0 0 20 20'%3E%3Cpath d='M20 5V2H0v3h20zm0 6V8H0v3h20zm0 6v-3H0v3h20z' fill='currentColor'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+}
+.wptrove-simple-select-content{
+    width: 100%;
+    display:none;
+}
+.wptrove-simple-select-container[data-wptrove-visible="yes"] .wptrove-simple-select-content{
+    display: block;
+}

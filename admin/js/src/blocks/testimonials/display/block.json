@@ -1,0 +1,111 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 2,
+    "name": "wptrove/testimonial-display",
+    "title": "Display Testimonials",
+    "category": "design",
+    "icon": "star",
+    "description": "Display Testimonials.",
+    "keywords": [ "alert", "message" ],
+    "version": "1.0.3",
+    "textdomain": "wptrove",
+    "attributes": {
+        "containerBgColor": {
+            "type": "object",
+            "default": ""
+        }, 
+        "containerBgGradient": {
+            "type": "string",
+            "default": ""
+        },
+        "containerPaddingUnits": {
+            "type": "string",
+            "default": "px"
+        }, 
+        "containerPaddingTop": {
+            "type": "string",
+            "default": ""
+        },  
+        "containerPaddingRight": {
+            "type": "string",
+            "default": ""
+        },
+        "containerPaddingBottom": {
+            "type": "string",
+            "default": ""
+        },  
+        "containerPaddingLeft": {
+            "type": "string",
+            "default": ""
+        },   
+        "textColor": {
+            "type": "object",
+            "default": ""
+        }, 
+        "containerBorderSize": {
+            "type": "string",
+            "default": ""
+        },  
+        "containerBorderRadius": {
+            "type": "string",
+            "default": ""
+        },
+        "containerBorderColor": {
+            "type": "object",
+            "default": ""
+        },
+        "textFontSizeType": {
+            "type": "string",
+            "default": "px"
+        }, 
+        "headingSize": {
+            "type": "string",
+            "default": "20"
+        },  
+        "textSize": {
+            "type": "string",
+            "default": "16"
+        }, 
+        "customerNameSize": {
+            "type": "string",
+            "default": "12"
+        },  
+        "customerDesigSize": {
+            "type": "string",
+            "default": "12"
+        },
+        "layout": {
+            "type": "string",
+            "default": "layoutOne"
+        },
+        "testimonialBgColor": {
+            "type": "object",
+            "default": ""
+        },         
+        "testimonialBorderSize": {
+            "type": "string",
+            "default": ""
+        },  
+        "testimonialBorderRadius": {
+            "type": "string",
+            "default": ""
+        },
+        "testimonialBorderColor": {
+            "type": "object",
+            "default": ""
+        }
+    },
+    "providesContext": {
+
+    },
+    "usesContext": [ ],
+    "supports": {
+
+    },
+    "styles": [
+
+    ],
+    "example": {
+
+    }
+}

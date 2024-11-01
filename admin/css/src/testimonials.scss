@@ -1,0 +1,198 @@
+.wptrove-testimonials-container{
+    width: 100%;
+}
+.wptrove-testimonials-content{
+    @include wptrove-container(100%, 10%, 0);
+}
+.wptrove-testimonial-source,
+.wptrove-testimonials-pagination-source{
+    display: none;
+}
+.wptrove-testimonials-heading{
+    @include wptrove-heading-one();
+}
+.wptrove-testimonials-selector{
+    margin: 0 0 3.0em 0;
+    width: 100%;
+    text-align: right;
+}
+.wptrove-testimonials-selector-inner{
+    padding: 2.0em 3.0em;
+    position: relative;
+    display: inline-block;
+    @media screen and (min-width : 1201px) {
+        padding: 2.0em 35% 2.0em 3.0em;
+    }
+    border:1px solid $containerHeader;
+    &__message{
+        font-size: 1.0rem;
+        margin: 0;
+        font-weight: bold;
+        text-align: right;
+        display: inline-block;
+    }
+}
+.wptrove-testimonials-selector-inner .wptrove-admin-select{
+    @media screen and (min-width : 1201px) {
+        width: 70%;
+    }
+}
+
+.wptrove-testimonials-empty{
+    margin: 0 0 1.0em 0;
+    padding: 1.0em 3.0em;
+    background: $containerSubHeader;
+    &__message{
+        margin: 0;
+        text-align: left;
+        font-size: 1.0rem;
+        @media screen and (min-width: 1201px) {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+    }
+}
+.wptrove-testimonials-list{
+    width: 100%;
+    display: none;
+    background: $containerSubHeader;
+    margin: 0 0 3.0em 0;
+}
+.wptrove-testimonial-item{
+    width: 100%;
+    &:nth-child(even){
+        background: $containerMainSelectBg;
+    }
+    &__title{
+        margin: 0;
+        padding: 1.6em 3.0em;
+        font-size: 1.0rem;
+        @media screen and (min-width: 1201px) {
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+        cursor: pointer;
+    }
+}
+.wptrove-testimonial-item-content{
+    padding: 0 3.0em 1.6em 3.0em;
+    font-size: 1.0rem;
+    display: none;
+    @media screen and (min-width: 1201px) {
+        font-size: 1.4rem;
+        font-weight: bold;
+    }    
+}
+.wptrove-testimonial-item-meta{
+    margin: 0 0 1.0em 0;
+    &__item{
+        border: 1px solid rgb(0, 0, 0, 0.4);
+        padding: 0.3em 1.0em;
+        display: inline-block;
+        margin: 0 1.0em 0.5em 0;
+        border-radius: 4px;
+    }
+}
+.wptrove-testimonial-item-heading{
+    font-size: 1.4rem;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+}
+.wptrove-testimonial-item-actual{
+    margin: 1.0em 0 0 0;
+    font-size: 1.2rem;
+    line-height: 1.4;
+    font-weight: bold;
+}
+
+.wptrove-testimonial-item-actions{
+    width: 100%;
+    padding: 1.2em 0 0 0;
+}
+.wptrove-testimonial-item-approve{
+    @include wptrove-rounded-button(16px, $colorOne, $colorThree, 10px, 36px);
+    position: relative;
+    margin: 0 0.5em 0 0;
+    &__overlay{
+        @include wptrove-rounded-button(16px, $colorOne, $colorThree, 10px, 36px);
+        z-index: 3;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: none;
+        cursor: default;
+    }
+    &__spinner{
+        @include wptrove-spinner(16px, #000, #fff, 2px);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -8px 0 0 -8px;
+        z-index: 5;
+        display: none;
+        cursor: default;
+    }
+}
+.wptrove-testimonial-item-delete{
+    @include wptrove-rounded-button(16px, $colorTwo, $colorThree, 10px, 36px);
+    position: relative;
+    margin: 0 0.5em 0 0;
+    &__overlay{
+        @include wptrove-rounded-button(16px, $colorTwo, $colorThree, 10px, 36px);
+        z-index: 3;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: none;
+        cursor: default;
+    }
+    &__spinner{
+        @include wptrove-spinner(16px, $colorThree, $colorFour, 2px);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -8px 0 0 -8px;
+        z-index: 5;
+        display: none;
+        cursor: default;
+    }
+}
+.wptrove-testimonial-item-error{
+    display: inline-block;
+    color: $colorFour;
+    font-weight: bold;
+    font-size: 1.0rem;
+}
+
+.wptrove-testimonials-pagination{
+    width: 100%;
+    display: none;   
+}
+.simple_feedback_display_pagination{
+    padding: 0 2.0em;
+}
+.simple_feedback_display_pagination span{
+    padding: 0.2em 0.6em;
+    background: rgb(0, 0, 0, 0.2);
+    margin: 0 0.4em 0.6em 0.4em;
+    display: inline-block;
+    cursor: pointer;
+}
+.simple_feedback_display_pagination span:first-child{
+    padding: 0.2em 1.0em;
+}
+.simple_feedback_display_pagination span:last-child{
+    padding: 0.2em 1.0em;
+}
+.simple_feedback_display_pagination_active{
+    background: rgb(0, 0, 0, 0.4) !important;
+}
+.simple_feedback_display_pagination_disabled{
+    cursor: default !important;
+    opacity: 0.3;
+}

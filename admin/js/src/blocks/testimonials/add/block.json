@@ -1,0 +1,115 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 2,
+    "name": "wptrove/add-testimonials",
+    "title": "Add Testimonial",
+    "category": "design",
+    "icon": "star",
+    "description": "Add testimonial form.",
+    "keywords": [ "alert", "message" ],
+    "version": "1.0.3",
+    "textdomain": "wptrove",
+    "attributes": {
+        "containerBgColor": {
+            "type": "object",
+            "default": ""
+        },
+        "containerBgGradient": {
+            "type": "string",
+            "default": ""
+        },
+        "containerPaddingUnits": {
+            "type": "string",
+            "default": "px"
+        }, 
+        "containerPaddingTop": {
+            "type": "string",
+            "default": ""
+        },
+        "containerPaddingRight": {
+            "type": "string",
+            "default": ""
+        },
+        "containerPaddingBottom": {
+            "type": "string",
+            "default": ""
+        },
+        "containerPaddingLeft": {
+            "type": "string",
+            "default": ""
+        },
+        "containerBorderSize": {
+            "type": "string",
+            "default": ""
+        },
+        "containerBorderRadius": {
+            "type": "string",
+            "default": ""
+        },
+        "containerBorderColor": {
+            "type": "object",
+            "default": ""
+        },
+        "headingSize": {
+            "type": "string",
+            "default": "20"
+        },
+        "headingColor": {
+            "type": "object",
+            "default": ""
+        },
+        "fontUnits": {
+            "type": "string",
+            "default": "px"
+        },
+        "textSize": {
+            "type": "string",
+            "default": "20"
+        },
+        "textColor": {
+            "type": "object",
+            "default": ""
+        },
+        "fieldBgColor": {
+            "type": "object",
+            "default": ""
+        },
+        "fieldTextSize": {
+            "type": "string",
+            "default": "20"
+        },
+        "fieldTextColor": {
+            "type": "object",
+            "default": ""
+        },
+        "fieldBorderColor": {
+            "type": "object",
+            "default": ""
+        },
+        "submitTextSize": {
+            "type": "string",
+            "default": "20"
+        },
+        "submitBgColor": {
+            "type": "object",
+            "default": ""
+        },
+        "submitTextColor": {
+            "type": "object",
+            "default": ""
+        }
+    },
+    "providesContext": {
+
+    },
+    "usesContext": [ ],
+    "supports": {
+
+    },
+    "styles": [
+
+    ],
+    "example": {
+
+    }
+}

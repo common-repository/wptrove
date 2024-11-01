@@ -1,0 +1,282 @@
+.wptrove #wpcontent{
+    padding-left: 0;
+    background: linear-gradient(0deg, #272640 0%, #312244 30%, #312244 100%);
+}
+.wptrove ul#adminmenu > li.current > a.current::after{
+    border-right-color: #272640;
+}
+
+.postbox-header{
+    display:none;
+}
+#poststuff .inside{
+    margin: 0 !important;
+}
+.postbox .inside{
+    padding: 0 !important;
+}
+.wptrove-testimonial-content{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.wptrove-testimonial-content *{
+    box-sizing: border-box;
+}
+.wptrove-testimonial-content__para{
+    padding: 10px;
+    margin: 0;
+}
+.wptrove-testimonial-content-text{
+    padding: 10px;
+    border: 1px dotted rgba(0,0,0,1);
+    background: rgba(0,0,0,0.05);
+    margin: 10px;
+    width: 70%;
+}
+.wptrove-testimonial-content-text__span{
+    display: block;
+    margin: 0 0 10px 0;
+}
+.wptrove-testimonial-content-text__para{
+    margin: 0;
+}
+
+
+
+.wptrove-admin-container,
+.wptrove-admin-container *{
+    box-sizing: border-box;
+}
+.wptrove-meta-container img,
+.wptrove-admin-container img{
+    max-width: 100%;
+}
+.wptrove-admin-container{
+    font-size: 1.0rem;
+    width: 80%;
+    margin: 5% 10%;
+    background-color: $containerBackground;
+}
+.wptrove-admin-heading{
+    width: 100%;
+    font-size: 1.0rem;
+    background-color: $containerHeader;
+    @media screen and (min-width : 1201px) {
+        padding: 3.0em 40% 3.0em 3.0em;
+    }
+    position: relative;
+    &__logo{
+        margin: 0;
+        padding: 2.0em 3.0em;
+        @media screen and (min-width : 1201px) {
+            padding: 0
+        }
+    }
+}
+.wptrove-admin-main-select{
+    display: none;
+}
+
+.wptrove-admin-content{
+    width: 100%;
+    position: relative;
+}
+
+.wptrove-admin-content-overlay{
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    z-index: 10;
+    background: $containerBackground;
+    display: block;
+    top: 0;
+    left: 0;    
+}
+.wptrove-admin-content-wait{
+    display: block;
+    position: absolute;
+    top: 150px;
+    left: 0;
+    width: 100%;
+    &__para{
+        text-align: center;
+        font-size: 1.6rem;
+        margin: 0 0 0.5em 0;
+        font-weight: bold;       
+    }
+    &__message{
+        text-align: center;
+        font-size: 1.6rem;
+        margin: 0 0 0.5em 0;
+        font-weight: bold;        
+    }
+    &__spinner{
+        @include wptrove-spinner(48px, $colorTwo, $colorOne, 6px);
+        margin: 0 0 0 0.5em;       
+    }
+}
+.wptrove-admin-content-error{
+    display: none;
+    position: absolute;
+    top: 150px;
+    left: 0;
+    width: 100%;
+    padding: 0 10%;
+    &__message{
+        margin: 0;
+        padding: 1.0em 2.0em;
+        border: 1px dotted #fd4447;
+        font-size: 1.2rem;
+        text-align: center;
+        font-weight: bold;      
+    }
+    &__icon{
+        position: absolute;
+        top: 0;
+        right: 10%;
+        margin: 10px 10px 0 0;
+        cursor: pointer;
+    }
+}
+
+.wptrove-admin-sub-heading{
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 1.0em 2.0em;
+    position: relative;
+    @media screen and (min-width : 1201px) {
+        padding: 2.0em 3.0em;
+    }
+    background-color: $containerSubHeader;
+    &__message{
+        font-size: 1.2rem;
+        @media screen and (min-width : 1201px) {
+            font-size: 1.4rem;
+        }
+        margin: 0;
+        font-weight: bold;
+    }
+}
+.wptrove-admin-content-inner{
+    width: 100%;
+    min-height: 400px;
+    position: relative;
+}
+.wptrove-admin-content-inner>div{
+    width: 100%;
+    position: relative;
+}
+
+.wptrove-admin-select{
+    font-size: 1.0rem;
+    width: 100%;
+    position: relative;
+    background: $containerMainSelectBg;
+    @media screen and (min-width : 1201px) {
+        width: 30%;
+        position: absolute;
+        top: 0.9em;
+        right: 2%;
+    }
+    &__heading{
+        margin: 0;
+        font-size: 1.0rem;
+        padding: 0.7em 4.0em 0.7em 1.0em;
+        font-weight: bold;
+        text-align: left;
+    }
+    &__icon{
+        font-size: 1.6rem;
+        width: 1.6em;
+        height: 1.6em;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' aria-hidden='true' role='img' width='1.4em' height='1.4em' preserveAspectRatio='xMidYMid meet' viewBox='0 0 24 24'%3E%3Cg fill='currentColor'%3E%3Crect x='3' y='11' width='18' height='2' rx='.95' ry='.95'/%3E%3Crect x='3' y='16' width='18' height='2' rx='.95' ry='.95'/%3E%3Crect x='3' y='6' width='18' height='2' rx='.95' ry='.95'/%3E%3C/g%3E%3C/svg%3E");
+        background-position: center;
+        background-repeat: no-repeat;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+    }
+}
+.wptrove-admin-select-options{
+    width: 100%;
+    padding: 1.0em 0;
+    background-color: $containerMainSelectBg;
+    @media screen and (min-width : 1201px) {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 3;
+    }
+    display: none;
+    &__item{
+        margin: 0;
+        font-size: 1.0rem;
+        padding: 0.5em 1.0em;
+        cursor: pointer;
+        font-weight: bold;
+        text-align: left;
+    }
+}
+
+.wptrove-pagination-item{
+    font-size: 1.2em;
+    padding: 0.4em 0.9em;
+    background: $containerSubHeader;
+    margin: 0 0.3em 0.6em 0.3em;
+    display: inline-block;
+    cursor: pointer;
+    &:hover{
+        background: $containerMainSelectBg;
+    }
+    &:first-child{
+        padding: 0.4em 1.2em;
+        margin-left: 0 !important;
+    }
+    &:last-child{
+        padding: 0.4em 1.2em;
+    }
+    &--active{
+        background: $containerHeader;
+        cursor: auto;
+        &:hover{
+            background: $containerHeader;
+        }
+    }
+    &--disabled{
+        cursor: default !important;
+        opacity: 0.3;
+        &:hover{
+            background: $containerSubHeader;
+        }
+    }
+}
+
+.wptrove-setting-container{
+    width: 100%;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+    border-radius: 4px;
+    background: rgba(0,0,0,0.03);
+    margin: 0 0 2.0em 0;
+    position: relative; 
+    padding: 2.0em; 
+}
+.wptrove-setting-container h3{
+    font-size: 1.4rem;
+    margin: 0 0 0.5em 0;
+    font-weight: bold;
+}
+.wptrove-setting-container p{
+    font-size: 1.0rem;
+    margin: 0;
+    font-weight: bold;
+}
+.wptrove-setting-content{
+    width: 100%;
+    padding: 1.4em 0;
+    position: relative; 
+    box-sizing: border-box;
+}
